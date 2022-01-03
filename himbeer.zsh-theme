@@ -147,7 +147,7 @@ $PR_RED ̣ŋ $PR_NO_COLOUR'
     # display exitcode on the right when >0
     return_code="%(?..%{$fg[yellow]%}%? ↵%{$reset_color%})"
     RPROMPT=' $return_code\
-$PR_GREEN [$PR_MAGENTA%D{%a %b %d %H:%M:%S}$PR_GREEN]$PR_HBAR$PR_GREEN$PR_LRCORNER$PR_NO_COLOUR'
+$PR_GREEN [$PR_MAGENTA%D{%d. %b %Y %H:%M:%S}$PR_GREEN]$PR_HBAR$PR_GREEN$PR_LRCORNER$PR_NO_COLOUR'
 
     PS2='$PR_BLUE$PR_HBAR\
 $PR_BLUE$PR_HBAR(\
