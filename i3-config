@@ -145,9 +145,9 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+Shift+l exec i3lock-fancy
 
 # power operations
-bindsym $mod+Shift+Comma exec "systemctl suspend"
-bindsym $mod+Shift+Minus exec "i3-nagbar -t warning -m 'You pressed the reboot shortcut. Do you really want to reboot the machine?' -B 'Yes, reboot' 'systemctl reboot'"
-bindsym $mod+Shift+Period exec "i3-nagbar -t warning -m 'You pressed the shutdown shortcut. Do you really want to shut down the machine?' -B 'Yes, power off' 'systemctl poweroff'"
+bindsym $mod+Shift+comma exec "systemctl suspend"
+bindsym $mod+Shift+minus exec "i3-nagbar -t warning -m 'You pressed the reboot shortcut. Do you really want to reboot the machine?' -B 'Yes, reboot' 'systemctl reboot'"
+bindsym $mod+Shift+period exec "i3-nagbar -t warning -m 'You pressed the shutdown shortcut. Do you really want to shut down the machine?' -B 'Yes, power off' 'systemctl poweroff'"
 
 bindsym $mod+r mode "resize"
 
