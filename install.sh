@@ -20,6 +20,7 @@ if command_exists apt; then
 	$SUDO apt install -y \
 		i3-gaps \
 		i3status \
+		i3lock-fancy \
 		feh \
 		picom \
 		bat \
