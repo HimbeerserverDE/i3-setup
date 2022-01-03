@@ -37,7 +37,7 @@ if command_exists apt; then
 	$SUDO apt install dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev
 
 	git clone https://github.com/Airblader/i3.git
-	mkdir i3/build
+	mkdir -p i3/build
 	cd $_ # same as cd i3/build
 	meson ..
 	ninja
