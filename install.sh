@@ -91,4 +91,5 @@ mkdir -p ~/
 cp zshrc ~/.zshrc
 
 mkdir -p ~/
-cp wallpaper.png ~/wallpaper.png
+cp wallpaper.png ~/Pictures/himbeerlogo.png
+ln -s ~/Pictures/himbeerlogo.png ~/.wallpaper.png
