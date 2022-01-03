@@ -13,8 +13,3 @@ You should probably install lightdm unless you already have a different
 desktop environment installed. In this case, run you can run the
 `install_additional.sh` script to install and configure lightdm.
 It also installs additional desktop programs like firefox and thunderbird.
-
-## Known issues
-i3-gaps isn't in the official Debian apt repositories
-and needs to be compiled from source. I'll eventually
-integrate this into the `install.sh` script.
