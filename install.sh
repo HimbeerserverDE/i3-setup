@@ -91,6 +91,9 @@ cp cat ~/bin/
 mkdir -p ~/.config/i3/
 cp i3-config ~/.config/i3/config
 
+mkdir -p ~/.config/i3status/
+cp i3status-config ~/.config/i3status/config
+
 mkdir -p ~/.config/kitty/
 cp kitty.conf ~/.config/kitty/kitty.conf
 
