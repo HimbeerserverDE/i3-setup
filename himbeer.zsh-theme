@@ -71,12 +71,12 @@ setprompt () {
     ZSH_THEME_GIT_PROMPT_DIRTY=""
     ZSH_THEME_GIT_PROMPT_CLEAN=""
 
-    ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%} ⚡"
-    ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[blue]%} 🚧"
-    ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%} 🗑️ "
-    ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%} 💱"
-    ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%} 🗜️ "
-    ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} 🔰"
+    ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%} +"
+    ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[yellow]%} 🚧"
+    ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%} -"
+    ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%} ➔"
+    ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[blue]%} ⛙"
+    ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} 📹"
 
     ###
     # See if we can use extended characters to look nicer.
@@ -135,19 +135,19 @@ setprompt () {
     # Finally, the prompt.
 
     PROMPT='$PR_SET_CHARSET$PR_STITLE${(e)PR_TITLEBAR}\
-$PR_MAGENTA$PR_ULCORNER$PR_HBAR nya \
+$PR_RED$PR_ULCORNER$PR_HBAR hsh \
 $PR_YELLOW%$PR_PWDLEN<...<%~%<< \
-`rvm_prompt_info || rbenv_prompt_info`$PR_BLUE$PR_HBAR$PR_HBAR${(e)PR_FILLBAR}─[\
-$PR_GREEN$USER_ALIAS$PR_BLUE@$PR_GREEN%m:%l\
-$PR_BLUE]$PR_BLUE$PR_HBAR$PR_URCORNER\
+`rvm_prompt_info || rbenv_prompt_info`$PR_GREEN$PR_HBAR$PR_HBAR${(e)PR_FILLBAR}─[\
+$PR_MAGENTA$USER_ALIAS$PR_GREEN@$PR_MAGENTA%m:%l\
+$PR_GREEN]$PR_GREEN$PR_HBAR$PR_URCORNER\
 
-$PR_MAGENTA╰─%{$reset_color%}`git_prompt_info``git_prompt_status`\
-$PR_MAGENTA λ $PR_NO_COLOUR'
+$PR_RED╰─%{$reset_color%}`git_prompt_info``git_prompt_status`\
+$PR_RED ̣ŋ $PR_NO_COLOUR'
 
     # display exitcode on the right when >0
-    return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
+    return_code="%(?..%{$fg[yellow]%}%? ↵%{$reset_color%})"
     RPROMPT=' $return_code\
-$PR_BLUE [$PR_GREEN%D{%a %b %d %H:%M:%S}$PR_BLUE]$PR_HBAR$PR_BLUE$PR_LRCORNER$PR_NO_COLOUR'
+$PR_GREEN [$PR_MAGENTA%D{%a %b %d %H:%M:%S}$PR_GREEN]$PR_HBAR$PR_GREEN$PR_LRCORNER$PR_NO_COLOUR'
 
     PS2='$PR_BLUE$PR_HBAR\
 $PR_BLUE$PR_HBAR(\
@@ -161,4 +161,4 @@ autoload -U add-zsh-hook
 add-zsh-hook precmd  theme_precmd
 add-zsh-hook preexec theme_preexec
 
-fortune | cowsay | lolcat -S 5
+fortune | cowsay | lolcat -S 56

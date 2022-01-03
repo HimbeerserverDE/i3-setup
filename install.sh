@@ -85,7 +85,7 @@ mkdir -p ~/.config/
 cp picom.conf ~/.config/picom.conf
 
 mkdir -p ~/.oh-my-zsh/themes/
-cp fleckenstein.zsh-theme ~/.oh-my-zsh/themes/fleckenstein.zsh-theme
+cp himbeer.zsh-theme ~/.oh-my-zsh/themes/himbeer.zsh-theme
 
 mkdir -p ~/
 cp zshrc ~/.zshrc
