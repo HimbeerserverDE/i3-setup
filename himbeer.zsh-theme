@@ -135,7 +135,7 @@ setprompt () {
     # Finally, the prompt.
 
     PROMPT='$PR_SET_CHARSET$PR_STITLE${(e)PR_TITLEBAR}\
-$PR_RED$PR_ULCORNER$PR_HBAR hsh \
+$PR_RED$PR_ULCORNER$PR_HBAR moo \
 $PR_YELLOW%$PR_PWDLEN<...<%~%<< \
 `rvm_prompt_info || rbenv_prompt_info`$PR_GREEN$PR_HBAR$PR_HBAR${(e)PR_FILLBAR}─[\
 $PR_MAGENTA$USER_ALIAS$PR_GREEN@$PR_MAGENTA%m:%l\
