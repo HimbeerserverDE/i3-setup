@@ -5,7 +5,7 @@ font pango:Ubuntu 11
 
 # startup
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock-fancy
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
 exec_always --no-startup-id feh --bg-fill $HOME/.wallpaper.png
 exec_always --no-startup-id killall -qw picom; picom -b
 
@@ -23,6 +23,7 @@ bindsym $mod+Shift+m exec discord
 bindsym $mod+Shift+h exec hexchat
 #bindsym $mod+Shift+m exec element-desktop
 bindsym $mod+Shift+t exec thunderbird
+bindsym $mod+Shift+s exec signal-desktop
 
 # screenshot
 bindsym $mod+Print exec scrot -e 'mv $f ~/Pictures/Screenshots/'
