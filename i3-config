@@ -26,7 +26,7 @@ bindsym $mod+Shift+t exec thunderbird
 bindsym $mod+Shift+s exec signal-desktop
 
 # screenshot
-bindsym $mod+Print exec scrot -e 'mv $f ~/Pictures/Screenshots/'
+bindsym $mod+Print exec scrot -e 'mv $f ~/Bilder/Screenshots/'
 
 # kill focused window
 bindsym $mod+Shift+q kill
